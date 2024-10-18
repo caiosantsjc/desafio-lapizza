@@ -1,0 +1,38 @@
+.headerDiv {
+    position: relative;
+    /* Permite o posicionamento absoluto dos filhos */
+    width: 100%;
+    /* Define a largura do contêiner */
+    height: 200px;
+    /* Define uma altura fixa para o contêiner */
+    overflow: hidden;
+    /* Opcional: oculta qualquer conteúdo que ultrapasse os limites */
+}
+
+.logo {
+    position: absolute;
+    /* Posiciona a logo absolutamente em relação ao headerDiv */
+    width: 216px;
+    /* Largura da logo */
+    height: 143px;
+    /* Altura da logo */
+    z-index: 100;
+    /* Garante que a logo esteja acima do fundo */
+    top: 50%;
+    /* Alinha verticalmente ao centro */
+    left: 50%;
+    /* Alinha horizontalmente ao centro */
+    transform: translate(-50%, -50%);
+    /* Centraliza a logo */
+}
+
+.bgLogo {
+    position: absolute;
+    /* Posiciona a imagem de fundo absolutamente */
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem de fundo */
+    z-index: 0;
+    /* Coloca a imagem de fundo abaixo da logo */
+}
